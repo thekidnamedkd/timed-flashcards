@@ -14,7 +14,8 @@ _A game to learn JavaScript terms that give a user a set of definitions and ask 
 | The game object is created with player and deck objects declared inside | Start Game | Game:{{Player}, {Deck}} |
 | The player object will have a playerScore set to 0. | | |
 | The deck will contain a set of flashcards. | | |
-| The flashcards will contain properties for definition, term, bad terms. | | | 
+| The flashcards will contain properties for definition, term, bad terms. | | |
+| The game will populate the bad terms of each flashcard with incorrect two random terms from else where in the deck. | | |
 | The game will show a flashcard definition from the deck for X seconds. | | |
 | The game will show three radio button terms for the definition shown. | | |
 | On click the game will compare a players radio selection against the correct term of the card. | | |
