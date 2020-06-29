@@ -6,16 +6,26 @@
 
 ## Description
 
-_A game to learn JavaScript terms that give a user a set of definitions and ask them to select the appropriate term from a set of options. The user will be awarded a point to total score for a correct answer and an incorr will take _
+_A game to learn JavaScript terms that give a user a set of definitions and ask them to select the appropriate term from a set of options. The user will be awarded a point to total score for a correct answer and an incorrectly will take away a point from the total. _
 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| The game object is created with player and deck objects declared inside| Start Game | Game:{{Player}, {Deck}} |
-| The player object will have two properties. turnScore and totalScore set to 0| | |
-| Program will alternate through X number terms and corresponding definitions on a timer. | | |
-| Program will re-show cards that have previously been shown, but were answered incorrectly | | |
-| Program will finish when score threshold is reached | | |
+| The game object is created with player and deck objects declared inside | Start Game | Game:{{Player}, {Deck}} |
+| The player object will have a playerScore set to 0. | | |
+| The deck will contain a set of flashcards. | | |
+| The flashcards will contain properties for definition, term, bad terms. | | | 
+| The game will show a flashcard definition from the deck for X seconds. | | |
+| The game will show three radio button terms for the definition shown. | | |
+| On click the game will compare a players radio selection against the correct term of the card. | | |
+| After X total seconds the game will compare a players radio selection against the correct term of the card. | | | 
+| A question answered correctly adds 1 point to the playerScore. | | |
+| A question answered wrong subtracts 1 point | | |
+| A question unanswered after X total seconds subtracts 1 point. | | |
+| The game will remove correctly answered cards from the deck. | | |
+| The game will keep incorrectly answered cards in the deck. | | |
+| The game will continue showing cards until a total score goal triggers a win state. | | |
+| The game will finish when score threshold is reached. | | |
 
 =question bank
 
@@ -25,8 +35,7 @@ radio buttons
 listing objects
 --GAME
   --PLAYER
-      --turnScore
-      --totalScore
+      --playerScore
   --DECK OF FLASHCARDS
     --flashcard array
     --flashcard prototype
