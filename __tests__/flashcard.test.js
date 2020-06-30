@@ -11,6 +11,6 @@ describe('flashcard', () => {
     expect(reusableCard.cardId).toBe(1)
     expect(reusableCard.defId).toBe(101)
     expect(reusableCard.termId).toBe(1001)
-    expect(reusableCard.phonyTermGrab).toBeLength(2)
+    expect(reusableCard.phonyTermGrab).toHaveLength(2)
   })
 });
