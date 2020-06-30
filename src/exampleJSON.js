@@ -5,31 +5,13 @@ export const exampleObject =
       id: 0,
       definition: "Node Package Module",
       term: "NPM",
-      faketerm: "JSON"
-      //   {
-      //     id: 200,
-      //     definition: 'Not People Maker'
-      //   },
-      //   {
-      //     id: 200,
-      //     definition: 'Not People Maker'
-      //   },
-      //   {
-
-      //   }
-      // 
-    },
-    {
-      id: 1,
-      definition: "some definition 2",
-      term: "name of the term"
+      faketerm: "JSON",
     }
   ]
 }
 
-let response = "some HTTPS request call"
 
-
+// let response = "some HTTPS request call"
 // exampleObject.terms[0].id <-- that would be 1
 // exampleObject.terms[1].definition <-- "some definition 2"
 

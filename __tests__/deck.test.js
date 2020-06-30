@@ -5,15 +5,15 @@ describe('Deck', () => {
   let reusableDeck;
   
   beforeEach(function() {
-    reusableDeck = new Deck ([1, 2, 3]);
+    reusableDeck = new Deck ();
 
   });
 
   test('should find a card at a position in the array', () => {
-    expect(reusableDeck.deckArray).toHaveLength(3);
+    expect(reusableDeck.deckArray).toBe("");
   });
 
   test('should pull the JSON key values in the deck array', () => {
-    expect(resusableDeck.exampleObject.cards[0].id, resusableDeck.exampleObject.cards[0].definition, resusableDeck.exampleObject.cards[0].term, resusableDeck.exampleObject.cards[0].faketerm).toBe(0,'Node Package Module', 'NPM', 'JSON');
+    expect(reusableDeck.exampleObject.cards[0].id, reusableDeck.exampleObject.cards[0].definition, reusableDeck.exampleObject.cards[0].term, reusableDeck.exampleObject.cards[0].faketerm).toBe(0,"Node Package Module", "NPM", "JSON");
   });
 });
