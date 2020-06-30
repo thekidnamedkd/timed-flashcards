@@ -39,10 +39,10 @@ listing objects
       --playerScore
   --DECK OF FLASHCARDS
     --flashcard array
-    --flashcard prototype
-      --term
-      --definition
-      --error definition
+      --FLASHCARD
+        --term
+        --definition
+        --error definition
 
 ## Setup/Installation Requirements
 
